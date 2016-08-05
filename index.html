@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- JQuery-->
+    <script src="jquery.js"></script>
+    <!-- My script -->
+    <script src="scripts.js"></script>
+
+    <!-- My style -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <div class="item">Откуда едем</div>
+        <div class="group">
+            <div class="fields">
+                <div class="inputs">
+                    <div class="input">Район<select id="borough"><option >Выберите район...</option></select></div>
+                    <div class="input">Массив<select id="block"></select></div>
+                </div>
+                <div class="description">Укажите район и массив откуда вы будете ехать. Если вы знаете точный адрес, то лучше укажите адрес<br></div>
+            </div>
+            <div class="center">или</div>
+            <div class="fields">
+                <div class="inputs">
+                    <div class="input">Улица<select></select></div>
+                    <div class="input">Дом<select></select></div>
+                </div>
+                <div class="description">Укажите улицу и номер дома. Начните набирать название улицы и в списке пдсветятся найденные варианты<br></div>
+            </div>
+        </div>
+
+        <div class="item">Дополнительно</div>
+        <div class="group">
+            <div class="fields">
+                <div class="inputs">
+                    <div class="input"><input type="checkbox">Машина с кондиционером</div>
+                    <div class="input"><input type="checkbox">Фургон/Универсал</div>
+                    <div class="input"><input type="checkbox">Еду с животным</div>
+                </div>
+                <div class="description">Укажите дополнительную информацию, которая поможет определиться с исполнителем<br></div>
+            </div>
+        </div>
+
+        <div class="button" id="search">ИСКАТЬ</div>
+
+        <div class="results" hidden>
+            <div class="item">Результаты поиска</div>
+            <div class="group">
+                <img src="wait.gif">
+                <div id="results__list">
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
